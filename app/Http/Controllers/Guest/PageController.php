@@ -11,8 +11,8 @@ class PageController extends Controller
     public function index()
     {
         // accedo al db
-        $trains = Train::where('orario_partenza', '=', '2023-05-11')
-            ->orWhere('orario_partenza', '>', '2023-05-11')
+        $trains = Train::where('orario_partenza', '>=', '2023-05-11')
+            // ->orWhere('orario_partenza', '>', '2023-05-11')
             // ->toSql();
             ->get();
         // dd($trains);
