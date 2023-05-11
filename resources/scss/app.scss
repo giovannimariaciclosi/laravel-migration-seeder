@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+
+.card-container {
+    padding: 2em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
+
+    .card {
+        background-color: rgb(255, 182, 225);
+    }
+
+    .weight600 {
+        font-weight: 600;
+    }
+}
