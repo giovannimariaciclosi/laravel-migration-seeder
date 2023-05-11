@@ -23,7 +23,7 @@
       @endif
 
       {{-- Stato del treno in orario o in ritardo --}}
-      @if ($singleTrain->in_orario == 0)
+      @if ($singleTrain->in_orario == 1)
         <div class="card-text">Ritardo: <span class="weight600">In orario</span></div>
       @else 
         <div class="card-text">Ritardo: <span class="weight600">In Ritardo</span></div>
